@@ -10,7 +10,7 @@ void main() {
           backgroundColor: Colors.teal[800],
         ),
         body: Center(
-          child: Image (
+          child: Image(
             image: NetworkImage('https://alanmajchrowicz.com/wp-content/uploads/2016/08/glacier_peak_image_lake_north_cascades_58240.jpg'),
           ),
         ),
