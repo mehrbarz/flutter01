@@ -4,14 +4,14 @@ void main() {
   runApp(
     MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.lightGreen,
+        backgroundColor: Colors.pink,
         appBar: AppBar(
           title: Text('I am rich'),
           backgroundColor: Colors.teal[800],
         ),
         body: Center(
           child: Image(
-            image: NetworkImage('https://alanmajchrowicz.com/wp-content/uploads/2016/08/glacier_peak_image_lake_north_cascades_58240.jpg'),
+            image: NetworkImage('https://mehrbarz.files.wordpress.com/2021/03/donut01.png'),
           ),
         ),
       ),
