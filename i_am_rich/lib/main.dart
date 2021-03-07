@@ -11,7 +11,7 @@ void main() {
         ),
         body: Center(
           child: Image(
-            image: NetworkImage('https://mehrbarz.files.wordpress.com/2021/03/donut01.png'),
+            image: AssetImage('images/donut01.png'),
           ),
         ),
       ),
