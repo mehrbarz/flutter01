@@ -20,11 +20,21 @@ class MyApp extends StatelessWidget {
               Text(
                 'Mehr Barz',
                 style: TextStyle(
+                  fontFamily: 'Maven Pro',
                     fontSize: 40,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
               )
-            ],
+              ,
+              Text(
+                'Developer',
+                style: TextStyle(
+                    fontFamily: 'Dancing Script',
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.lightGreen),
+              ),
+            ]
           ),
         ),
       ),
