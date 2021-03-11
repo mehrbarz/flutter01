@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.cyan,
         body: SafeArea(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               radius: 50,
@@ -37,50 +38,51 @@ class MyApp extends StatelessWidget {
                 letterSpacing: 2.6,
               ),
             ),
-            Card(
-
-              color: Colors.indigo,
-              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-              child: ListTile(
-                leading: Icon(
-                  Icons.phone,
-                  size: 30,
-                  color: Colors.teal.shade200,
-                ),
-                title: Text(
-                  '+46 73 269 2135',
-                  style: TextStyle(
-                    color: Colors.lime,
-                    fontFamily: 'Dancing Script',
-                    fontSize: 20,
-                  ),
-                ),
-              )
+            SizedBox( height: 25,
+              width: 150,
+              child: Divider(
+                color: Colors.pink,
+              ),
             ),
             Card(
-
-              color: Colors.indigo,
-              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-              child: ListTile(
-                leading: Icon(
-                  Icons.email,
-                  size: 30,
-                  color: Colors.teal.shade200,
-                ),
-                title: Text(
-                  'mehrbarz@barz.com',
-                  style: TextStyle(
-                    color: Colors.lime,
-                    fontFamily: 'Dancing Script',
-                    fontSize: 20,
+                color: Colors.indigo,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 30,
+                    color: Colors.teal.shade200,
                   ),
-                ),
-              )
-            )
+                  title: Text(
+                    '+46 73 269 2135',
+                    style: TextStyle(
+                      color: Colors.lime,
+                      fontFamily: 'Dancing Script',
+                      fontSize: 20,
+                    ),
+                  ),
+                )),
+            Card(
+                color: Colors.indigo,
+                margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    size: 30,
+                    color: Colors.teal.shade200,
+                  ),
+                  title: Text(
+                    'mehrbarz@barz.com',
+                    style: TextStyle(
+                      color: Colors.lime,
+                      fontFamily: 'Dancing Script',
+                      fontSize: 20,
+                    ),
+                  ),
+                ))
           ],
         )),
       ),
     );
   }
 }
-
