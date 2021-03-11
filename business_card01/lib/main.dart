@@ -9,8 +9,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.cyan,
         body: SafeArea(
             child: Column(
           children: [
@@ -32,59 +33,49 @@ class MyApp extends StatelessWidget {
                 fontFamily: 'Dancing Script',
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
-                color: Colors.lightGreen,
+                color: Colors.purple,
                 letterSpacing: 2.6,
               ),
             ),
-            Container(
-              padding: EdgeInsets.all(11.11),
-              color: Colors.deepOrange,
+            Card(
+
+              color: Colors.indigo,
               margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.phone,
-                    size: 30,
-                    color: Colors.teal.shade200,
+              child: ListTile(
+                leading: Icon(
+                  Icons.phone,
+                  size: 30,
+                  color: Colors.teal.shade200,
+                ),
+                title: Text(
+                  '+46 73 269 2135',
+                  style: TextStyle(
+                    color: Colors.lime,
+                    fontFamily: 'Dancing Script',
+                    fontSize: 20,
                   ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Text(
-                    '+46 73 269 2135',
-                    style: TextStyle(
-                      color: Colors.lime,
-                      fontFamily: 'Dancing Script',
-                      fontSize: 20,
-                    ),
-                  ),
-                ],
-              ),
+                ),
+              )
             ),
-            Container(
-              padding: EdgeInsets.all(11.11),
-              color: Colors.deepOrange,
+            Card(
+
+              color: Colors.indigo,
               margin: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-              child: Row(
-                children: <Widget>[
-                  Icon(
-                    Icons.email,
-                    size: 30,
-                    color: Colors.teal.shade200,
+              child: ListTile(
+                leading: Icon(
+                  Icons.email,
+                  size: 30,
+                  color: Colors.teal.shade200,
+                ),
+                title: Text(
+                  'mehrbarz@barz.com',
+                  style: TextStyle(
+                    color: Colors.lime,
+                    fontFamily: 'Dancing Script',
+                    fontSize: 20,
                   ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Text(
-                    'mehrbarz@barz.com',
-                    style: TextStyle(
-                      color: Colors.lime,
-                      fontFamily: 'Dancing Script',
-                      fontSize: 20,
-                    ),
-                  ),
-                ],
-              ),
+                ),
+              )
             )
           ],
         )),
@@ -92,3 +83,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
